@@ -1,4 +1,4 @@
-#include <python.h>
+#include <main.h>
 
 // Function 1: Add two integers
 static PyObject* add(PyObject* self, PyObject* args) {
