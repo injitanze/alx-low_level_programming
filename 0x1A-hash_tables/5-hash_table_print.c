@@ -9,18 +9,18 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int x = 0;
 	hash_node_t  *brook;
-	int key-value = 0;
+	int key_value = 0;
 
 	if (!ht)
 		return;
 
 	printf("{");
-	for (x = 0;  < ht->size; x++)
+	for (x = 0; x < ht->size; x++)
 	{
 		brook = ht->array[x];
 		while (brook)
 		{
-			if (key-value)
+			if (key_value)
 				printf(", ");
 			printf("'%s': '%s'", brook->key, brook->value);
 			key_value = 1;

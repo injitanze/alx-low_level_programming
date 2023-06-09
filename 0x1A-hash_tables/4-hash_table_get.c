@@ -16,7 +16,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		return (NULL);
 
 	index = key_index((const unsigned char *)key, ht->size);
-	bucket = ht->array[index];
+	brook = ht->array[index];
 
 	while (brook)
 	{

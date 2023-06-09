@@ -145,7 +145,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 void shash_table_print(const shash_table_t *ht)
 {
 	shash_node_t *brook;
-	int key-value = 0;
+	int key_value = 0;
 
 	if (!ht)
 		return;
@@ -153,10 +153,10 @@ void shash_table_print(const shash_table_t *ht)
 	printf("{");
 	while (brook)
 	{
-		if (key-value)
+		if (key_value)
 			printf(", ");
 		printf("'%s': '%s'", brook->key, brook->value);
-		key-value = 1;
+		key_value = 1;
 		brook = brook->snext;
 	}
 	printf("}\n");
@@ -169,7 +169,7 @@ void shash_table_print(const shash_table_t *ht)
 void shash_table_print_rev(const shash_table_t *ht)
 {
 	shash_node_t *brook;
-	int key-value = 0;
+	int key_value = 0;
 
 	if (!ht)
 		return;
@@ -177,10 +177,10 @@ void shash_table_print_rev(const shash_table_t *ht)
 	printf("{");
 	while (brook)
 	{
-		if (key-value)
+		if (key_value)
 			printf(", ");
 		printf("'%s': '%s'", brook->key, brook->value);
-		key-value = 1;
+		key_value = 1;
 		brook = brook->sprev;
 	}
 	printf("}\n");
